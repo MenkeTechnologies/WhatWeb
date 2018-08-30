@@ -54,7 +54,7 @@ require 'openssl'
 # add the directory of the file currently being executed to the load path
 $LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__))) unless
     $:.include?(File.dirname(__FILE__)) || $LOAD_PATH.include?(File.expand_path(File.dirname(__FILE__)))
-$LOAD_PATH << "/usr/share/whatweb/"
+$LOAD_PATH << "/usr/local/share/whatweb/"
 
 # if __FILE__ is a symlink then follow *every* symlink
 if File.symlink?(__FILE__)
